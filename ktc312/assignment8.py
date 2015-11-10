@@ -12,6 +12,7 @@ def main():
     num_trails = get_num_trails()
     trial(position_list, num_trails, budget, odds, result_output)
 
+
 if __name__ == "__main__":
     try:
         main()
