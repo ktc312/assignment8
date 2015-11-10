@@ -1,5 +1,6 @@
 __author__ = 'ktc312'
 import numpy as np
+from gen_results import *
 
 class Simulation(object):
 
@@ -28,4 +29,6 @@ def trial(position_list, num_trails, budget, odds, result_output):
         for times in range(0, num_trails):
             cumu_ret[times] = invest_simulate.run()
             daily_ret[times] = (cumu_ret[times] / budget) - 1
-    pass
+
+        GenResults(result_output,invest_simulate.position,daily_ret)
+        PlotHist(invest_simulate.position,daily_ret)
