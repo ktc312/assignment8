@@ -1,7 +1,7 @@
 __author__ = 'ktc312'
 
 from positions import *
-from trial import *
+from trials import *
 
 budget = 1000
 odds = 0.51
@@ -11,4 +11,11 @@ def main():
     position_list = get_position_list()
     num_trails = get_num_trails()
     trial(position_list, num_trails, budget, odds, result_output)
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        print 'Keyboard Interrupt'
+
 
