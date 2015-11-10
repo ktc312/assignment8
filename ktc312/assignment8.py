@@ -1,3 +1,5 @@
+__author__ = 'ktc312'
+
 from positions import *
 from trial import *
 
@@ -7,3 +9,6 @@ result_output = 'results.txt'
 
 def main():
     position_list = get_position_list()
+    num_trails = get_num_trails()
+    trial(position_list, num_trails, budget, odds, result_output)
+
