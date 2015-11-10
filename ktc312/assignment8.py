@@ -9,7 +9,7 @@ result_output = 'results.txt'
 
 def main():
     position_list = get_position_list()
-    num_trails = get_num_trails()
+    num_trails = get_num_trials()
     trial(position_list, num_trails, budget, odds, result_output)
 
 
